@@ -1,21 +1,19 @@
 import "./styles.css";
-import { personData } from "./data";
+import { userData } from "./data";
+import userAvatar from "../../assets/avatar.jpg";
 
-function LessonCard() {
+function ProfileCard() {
     return (
-        <div className="profile-card">
-            <div className="profile-card_header">
-            <h3>User profile</h3>
-            </div>
-            <img
-                src={personData.photo}
-                alt="Фото пользователя"
-            />
-            <p><span>Name:</span> {personData.name}</p>
-            <p><span>Profession:</span> {personData.profession}</p>
-            <p><span>Hobby:</span> {personData.hobby}</p>
+        <div className="profile-card-wrapper">
+            <div className="profile-card-title">{userData.name}</div>
+            {/* 1 вариант */}
+            {/* <img src={userData.avatar} /> */}
+            {/* 2 вариант */}
+            <img src={userAvatar} />
+            <div>{userData.profession}</div>
+            <div>{userData.hobbies[0]}</div>
         </div>
     );
 }
 
-export default LessonCard;
+export default ProfileCard;
