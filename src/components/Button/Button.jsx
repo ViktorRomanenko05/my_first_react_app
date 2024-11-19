@@ -4,7 +4,7 @@ function Button({ name, type = "button", onClick}) {
     // console.log(props.buttonName);
 
     return (
-        <button onClick={onClick} className="main-button" type={type}>
+        <button className="main-button" onClick={onClick} type={type}>
             {name}
         </button>
     );
