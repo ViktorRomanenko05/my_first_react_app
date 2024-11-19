@@ -11,6 +11,7 @@ import Lesson04 from "./lessons/Lesson04/Lesson04";
 
 //consultation imports
 import Consultation02 from "./consultations/Consultation02/Consultation02";
+import Homework04 from "./homeworks/Homework04/Homework04";
 
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
             {/* <Lesson03/> */}
             {/* <Consultation02 /> */}
             {/* <Homework03/> */}
-            <Lesson04 />
+            {/*<Lesson04 />*/}
+            <Homework04 />
         </div>
     );
 }
